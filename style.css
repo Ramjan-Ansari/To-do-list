@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: rgb(132,238,238);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container input{
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+input::placeholder{
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.input-container input[type="text"]{
+    width: 70%;
+}
+.input-container input[type="button"]{
+    background-color: rgb(0, 76, 78);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    width: 28%;
+}
+
+ul{
+    width: 100%;
+    max-width: 450px;
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-block-end: 12px;
+    border: .2px solid #ccc;
+    padding: 6px 12px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+ul li:hover{
+    background-color: #cbcaca;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 4px;
+    cursor: pointer;
+}
+.deletebtn{
+    color: #ff0000;
+}
+.editbtn{
+    color: #4949b9;
+}
